@@ -15,11 +15,26 @@ export const Primary = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   children: [
-    <img src="https://picsum.photos/id/1/400/500" />,
-    <img src="https://picsum.photos/id/20/400/500" />,
-    <img src="https://picsum.photos/id/35/400/500" />,
-    <img src="https://picsum.photos/id/47/400/500" />,
-    <img src="https://picsum.photos/id/54/400/500" />,
+    <img
+      style={{ objectFit: "contain" }}
+      src="https://picsum.photos/id/1/400/500"
+    />,
+    <img
+      style={{ objectFit: "contain" }}
+      src="https://picsum.photos/id/20/400/500"
+    />,
+    <img
+      style={{ objectFit: "contain" }}
+      src="https://picsum.photos/id/35/400/500"
+    />,
+    <img
+      style={{ objectFit: "contain" }}
+      src="https://picsum.photos/id/47/400/500"
+    />,
+    <img
+      style={{ objectFit: "contain" }}
+      src="https://picsum.photos/id/54/400/500"
+    />,
   ],
   style: { width: "400px", height: "500px" },
 }
