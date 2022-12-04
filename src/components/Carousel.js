@@ -73,3 +73,6 @@ export default function Carousel({ style = {}, children = [] }) {
     </div>
   )
 }
+
+// TODO: proptypes 활용하여 타입체크
+// 스토리북 연동
