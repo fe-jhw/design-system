@@ -1,14 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
 
-export default function Card({
-  imgUrl = "",
-  title = "",
-  description = "",
-  date = "",
-  style = {},
-  children,
-}) {
+export default function Card({ style = {}, children }) {
   return (
     <div
       css={css({
@@ -17,6 +10,7 @@ export default function Card({
         overflow: "hidden",
         padding: "20px 30px 20px 15px",
         transition: "border 150ms ease-out, transform 150ms ease-out",
+        border: "1px solid #f0f0f0",
         ...style,
         "&:hover": {
           borderColor: "#1EA7FD50",
@@ -28,8 +22,4 @@ export default function Card({
       {children}
     </div>
   )
-}
-
-{
-  /* <Card imgUrl={} title={} description={} date={}/> */
 }
