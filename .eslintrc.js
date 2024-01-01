@@ -16,14 +16,7 @@ module.exports = {
 
   ignorePatterns: ['.lighthouserc.js', 'config/'],
 
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'eslint-config-prettier',
-    'plugin:react/recommended',
-    'plugin:testing-library/react',
-    'plugin:jest-dom/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'eslint-config-prettier', 'plugin:react/recommended', 'plugin:testing-library/react', 'plugin:jest-dom/recommended', 'plugin:storybook/recommended'],
   plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks', 'testing-library', 'jest-dom'],
   settings: { react: { version: 'detect' } },
 

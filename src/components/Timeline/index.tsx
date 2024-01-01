@@ -1,5 +1,5 @@
-import { ReactNode } from "react"
-import "./Timeline.css"
+import { ReactNode } from 'react'
+import './Timeline.css'
 
 type TimelineProp = {
   items: string[]
@@ -24,7 +24,7 @@ const Timeline: React.FC<TimelineProp> = ({ items }) => {
 
 const Item: React.FC<TimelineItemProp> = ({ children, last }) => {
   return (
-    <li className={"timeline-item" + (last ? "timeline-item-last" : "")}>
+    <li className={'timeline-item' + (last ? 'timeline-item-last' : '')}>
       <div className="timeline-item-tail"></div>
       <div className="timeline-item-head timeline-item-head-blue"></div>
       <div className="timeline-item-content">{children}</div>
@@ -32,4 +32,4 @@ const Item: React.FC<TimelineItemProp> = ({ children, last }) => {
   )
 }
 
-export default Timeline
+export { Timeline }
