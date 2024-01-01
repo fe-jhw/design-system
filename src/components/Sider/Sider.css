@@ -1,0 +1,16 @@
+.sider {
+  flex: 0 0 14rem;
+  max-width: 14rem;
+  min-width: 14rem;
+  width: 14rem;
+  position: relative;
+  background: #001529;
+  transition: all 0.2s;
+  padding-top: 16px;
+}
+
+.sider-children {
+  height: 100%;
+  margin-top: -0.1px;
+  padding-top: 0.1px;
+}

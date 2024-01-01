@@ -1,0 +1,24 @@
+.typography {
+  color: rgba(0, 0, 0, 0.88);
+  word-break: break-word;
+  line-height: 1.5714285714285714;
+}
+
+.typography-link:hover,
+.typography-link:focus {
+  text-decoration: none;
+  color: #69b1ff;
+}
+
+.typography,
+.typography-link {
+  color: #1677ff;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.typography-secondary {
+  color: rgba(0, 0, 0, 0.45);
+}

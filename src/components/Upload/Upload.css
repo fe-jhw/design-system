@@ -1,0 +1,174 @@
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.upload-wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.upload-wrapper .upload {
+  outline: 0;
+}
+
+.upload-drag {
+  height: 60% !important;
+  border-radius: 0 !important;
+}
+
+.upload-wrapper .upload-drag {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.upload-wrapper .upload-drag .upload {
+  padding: 16px 0;
+}
+
+.upload-wrapper .upload-drag .upload-btn {
+  display: table;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.upload-wrapper .upload input[type="file"] {
+  cursor: pointer;
+}
+
+.upload-wrapper .upload-drag .upload-drag-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.upload-wrapper .upload-drag p.upload-drag-icon {
+  margin-bottom: 16px;
+}
+
+.upload-wrapper .upload-drag p.upload-text {
+  margin: 0 0 4px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 16px;
+}
+
+.upload-wrapper .upload-drag p.upload-hint {
+  color: rgba(0,0,0,0.45);
+  font-size: 14px;
+}
+
+.upload-list {
+  overflow-y: auto;
+  height: 40% !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.upload-wrapper .upload-list {
+  line-height: 1.5714285714285714;
+}
+
+.upload-wrapper .upload-list::before {
+  display: table;
+  content: "";
+}
+
+.upload-wrapper .upload-list .upload-list-item-container {
+  transition: opacity 0.3s, height 0.3s;
+}
+
+.upload-wrapper .upload-list .upload-list-item-container::before {
+  display: table;
+  width: 0;
+  height: 0;
+  content: "";
+}
+
+.upload-wrapper .upload-list .upload-list-item {
+  position: relative;
+  height: 22px;
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.upload-wrapper .upload-list .upload-list-item .upload-list-item-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 8px;
+  line-height: 1.5714285714285714;
+  flex: auto;
+  transition: all 0.3s;
+}
+
+.upload-list-item-action {
+  outline: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  padding: 0px 7px;
+  border-radius: 4px;
+  width: 24px;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  opacity: 0;
+  height: 22px;
+  border: 0;
+  line-height: 1;
+}
+
+.upload-wrapper .upload-list .upload-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.upload-wrapper .upload-list .upload-list-item:hover .upload-list-item-action {
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.upload-wrapper .upload-drag:not(.upload-disabled):hover {
+  border-color: #4096ff;
+}
+
+.upload-wrapper .upload-drag p.upload-drag-icon .anticon {
+  color: #1677ff;
+  font-size: 48px;
+}
+
+.upload-list-item {
+  animation: smoothAppear 1s;   
+}

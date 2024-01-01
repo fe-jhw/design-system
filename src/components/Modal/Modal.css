@@ -1,0 +1,115 @@
+.modal-root .modal-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.modal-root .modal-wrap {
+  z-index: 1000;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  outline: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-root .modal-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  outline: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  pointer-events: none;
+  position: relative;
+  top: 50px;
+  width: auto;
+  max-width: calc(100vw - 32px);
+  padding-bottom: 24px;
+  width: 520px;
+  transform-origin: 328px 5px;
+}
+
+.modal .modal-content {
+  position: relative;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+  padding: 20px 24px;
+}
+
+.modal .modal-close {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  z-index: 1010;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  background: transparent;
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.modal .modal-close-x {
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+}
+
+.modal .modal-header {
+  color: rgba(0, 0, 0, 0.88);
+  background: #ffffff;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 8px;
+}
+
+.modal .modal-title {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.modal .modal-body {
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  word-wrap: break-word;
+}
